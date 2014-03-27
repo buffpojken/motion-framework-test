@@ -1,0 +1,1079 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant declared_type='NSString*' name='VLCDefaultStreamOutputRTP' type='@'/>
+<constant declared_type='NSString*' name='VLCDefaultStreamOutputRTSP' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaListItemAdded' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaListItemDeleted' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaMetaChanged' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaPlayerStateChanged' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaPlayerTimeChanged' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaPlayerVolumeChanged' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationAudioChannelsNumber' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationAudioRate' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationBitrate' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationCodec' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationCodecLevel' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationCodecProfile' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationDescription' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationFrameRate' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationFrameRateDenominator' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationId' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationLanguage' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationSourceAspectRatio' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationSourceAspectRatioDenominator' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationTextEncoding' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationType' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationTypeAudio' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationTypeText' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationTypeUnknown' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationTypeVideo' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationVideoHeight' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMediaTracksInformationVideoWidth' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationAlbum' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationArtist' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationArtwork' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationArtworkURL' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationCopyright' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationDate' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationDescription' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationEncodedBy' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationGenre' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationLanguage' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationNowPlaying' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationPublisher' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationRating' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationSetting' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationTitle' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationTrackID' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationTrackNumber' type='@'/>
+<constant const='true' declared_type='NSString*' name='VLCMetaInformationURL' type='@'/>
+<enum name='VLCDoNotRepeat' value='0'/>
+<enum name='VLCMediaPlayerStateBuffering' value='2'/>
+<enum name='VLCMediaPlayerStateEnded' value='3'/>
+<enum name='VLCMediaPlayerStateError' value='4'/>
+<enum name='VLCMediaPlayerStateOpening' value='1'/>
+<enum name='VLCMediaPlayerStatePaused' value='6'/>
+<enum name='VLCMediaPlayerStatePlaying' value='5'/>
+<enum name='VLCMediaPlayerStateStopped' value='0'/>
+<enum name='VLCMediaStateBuffering' value='1'/>
+<enum name='VLCMediaStateError' value='3'/>
+<enum name='VLCMediaStateNothingSpecial' value='0'/>
+<enum name='VLCMediaStatePlaying' value='2'/>
+<enum name='VLCRepeatAllItems' value='2'/>
+<enum name='VLCRepeatCurrentItem' value='1'/>
+<function name='VLCMediaPlayerStateToString'>
+<arg declared_type='VLCMediaPlayerState' name='state' type='i' type64='q'/>
+<retval declared_type='NSString*' type='@'/>
+</function>
+<class name='NSObject'>
+<method selector='media:metaValueChangedFrom:forKey:'>
+<arg declared_type='VLCMedia*' index='0' name='aMedia' type='@'/>
+<arg declared_type='id' index='1' name='oldValue' type='@'/>
+<arg declared_type='NSString*' index='2' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaDidFinishParsing:'>
+<arg declared_type='VLCMedia*' index='0' name='aMedia' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaList:mediaAdded:atIndex:'>
+<arg declared_type='VLCMediaList*' index='0' name='aMediaList' type='@'/>
+<arg declared_type='VLCMedia*' index='1' name='media' type='@'/>
+<arg declared_type='NSInteger' index='2' name='index' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaList:mediaRemovedAtIndex:'>
+<arg declared_type='VLCMediaList*' index='0' name='aMediaList' type='@'/>
+<arg declared_type='NSInteger' index='1' name='index' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaMetaDataDidChange:'>
+<arg declared_type='VLCMedia*' index='0' name='aMedia' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaPlayerStateChanged:'>
+<arg declared_type='NSNotification*' index='0' name='aNotification' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaPlayerTimeChanged:'>
+<arg declared_type='NSNotification*' index='0' name='aNotification' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaThumbnailer:didFinishThumbnail:'>
+<arg declared_type='VLCMediaThumbnailer*' index='0' name='mediaThumbnailer' type='@'/>
+<arg declared_type='CGImageRef' index='1' name='thumbnail' type='^{CGImage=}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaThumbnailerDidTimeOut:'>
+<arg declared_type='VLCMediaThumbnailer*' index='0' name='mediaThumbnailer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='VLCAudio'>
+<method selector='isMuted'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setMute:'>
+<arg declared_type='BOOL' index='0' name='value' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVolume:'>
+<arg declared_type='NSUInteger' index='0' name='volume' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='volume'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='volumeDown'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='volumeUp'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='VLCExtension'>
+<method selector='initWithInstance:'>
+<arg declared_type='struct extension_t*' index='0' name='instance' type='^{extension_t=}'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='instance'>
+<retval declared_type='struct extension_t*' type='^{extension_t=}'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='VLCExtensionsManager'>
+<method selector='extensions'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='mediaPlayer'>
+<retval declared_type='VLCMediaPlayer*' type='@'/>
+</method>
+<method selector='runExtension:'>
+<arg declared_type='VLCExtension*' index='0' name='extension' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMediaPlayer:'>
+<arg declared_type='VLCMediaPlayer*' index='0' name='mediaPlayer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedManager'>
+<retval declared_type='VLCExtensionsManager*' type='@'/>
+</method>
+</class>
+<class name='VLCLibrary'>
+<method selector='changeset'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='compiler'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithOptions:'>
+<arg declared_type='NSArray*' index='0' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setApplicationIdentifier:withVersion:andApplicationIconName:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<arg declared_type='NSString*' index='1' name='version' type='@'/>
+<arg declared_type='NSString*' index='2' name='icon' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHumanReadableName:withHTTPUserAgent:'>
+<arg declared_type='NSString*' index='0' name='readableName' type='@'/>
+<arg declared_type='NSString*' index='1' name='userAgent' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedLibrary'>
+<retval declared_type='VLCLibrary*' type='@'/>
+</method>
+<method selector='version'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='VLCMedia'>
+<method selector='addOptions:'>
+<arg declared_type='NSDictionary*' index='0' name='options' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='compare:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<retval declared_type='NSComparisonResult' type='i' type64='q'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='demuxBitrate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initAsNodeWithName:'>
+<arg declared_type='NSString*' index='0' name='aName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithPath:'>
+<arg declared_type='NSString*' index='0' name='aPath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithURL:'>
+<arg declared_type='NSURL*' index='0' name='anURL' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='inputBitrate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='isMediaSizeSuitableForDevice'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isParsed'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='length'>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method selector='lengthWaitUntilDate:'>
+<arg declared_type='NSDate*' index='0' name='aDate' type='@'/>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method class_method='true' selector='mediaAsNodeWithName:'>
+<arg declared_type='NSString*' index='0' name='aName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='mediaWithPath:'>
+<arg declared_type='NSString*' index='0' name='aPath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='mediaWithURL:'>
+<arg declared_type='NSURL*' index='0' name='anURL' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='metaDictionary'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='metadataForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='numberOfCorruptedDataPackets'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfDecodedAudioBlocks'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfDecodedVideoBlocks'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfDiscontinuties'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfDisplayedPictures'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfLostAudioBuffers'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfLostPictures'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfPlayedAudioBuffers'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfReadBytesOnDemux'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfReadBytesOnInput'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfSentBytes'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='numberOfSentPackets'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='parse'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='saveMetadata'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMetadata:forKey:'>
+<arg declared_type='NSString*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='state'>
+<retval declared_type='VLCMediaState' type='i' type64='q'/>
+</method>
+<method selector='stats'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='streamOutputBitrate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='subitems'>
+<retval declared_type='VLCMediaList*' type='@'/>
+</method>
+<method selector='synchronousParse'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tracksInformation'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSURL*' type='@'/>
+</method>
+</class>
+<class name='VLCMediaDiscoverer'>
+<method class_method='true' selector='availableMediaDiscoverer'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='discoveredMedia'>
+<retval declared_type='VLCMediaList*' type='@'/>
+</method>
+<method selector='initWithName:'>
+<arg declared_type='NSString*' index='0' name='aServiceName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isRunning'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='localizedName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='VLCMediaLibrary'>
+<method selector='allMedia'>
+<retval declared_type='VLCMediaList*' type='@'/>
+</method>
+<method class_method='true' selector='sharedMediaLibrary'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='VLCMediaList'>
+<method selector='addMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='count'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='indexOfMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='initWithArray:'>
+<arg declared_type='NSArray*' index='0' name='array' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='insertMedia:atIndex:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<arg declared_type='NSInteger' index='1' name='index' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isReadOnly'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='lock'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaAtIndex:'>
+<arg declared_type='NSInteger' index='0' name='index' type='i' type64='q'/>
+<retval declared_type='VLCMedia*' type='@'/>
+</method>
+<method selector='removeMediaAtIndex:'>
+<arg declared_type='NSInteger' index='0' name='index' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='unlock'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='VLCMediaListPlayer'>
+<method selector='initWithOptions:'>
+<arg declared_type='NSArray*' index='0' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='mediaList'>
+<retval declared_type='VLCMediaList*' type='@'/>
+</method>
+<method selector='mediaPlayer'>
+<retval declared_type='VLCMediaPlayer*' type='@'/>
+</method>
+<method selector='next'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='pause'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='play'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='playItemAtIndex:'>
+<arg declared_type='int' index='0' name='index' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='playMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='previous'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='repeatMode'>
+<retval declared_type='VLCRepeatMode' type='i' type64='q'/>
+</method>
+<method selector='rootMedia'>
+<retval declared_type='VLCMedia*' type='@'/>
+</method>
+<method selector='setMediaList:'>
+<arg declared_type='VLCMediaList*' index='0' name='mediaList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRepeatMode:'>
+<arg declared_type='VLCRepeatMode' index='0' name='repeatMode' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRootMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='rootMedia' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stop'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='VLCMediaPlayer'>
+<method selector='adjustFilterEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='amplificationOfBand:'>
+<arg declared_type='unsigned int' index='0' name='index' type='I'/>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='audio'>
+<retval declared_type='VLCAudio*' type='@'/>
+</method>
+<method selector='audioChannel'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='audioTrackIndexes'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='audioTrackNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='audioTracks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='brightness'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='canPause'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='chaptersForTitleIndex:'>
+<arg declared_type='NSUInteger' index='0' name='titleIndex' type='I' type64='Q'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='contrast'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='currentAudioPlaybackDelay'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='currentAudioTrackIndex'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='currentChapterIndex'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='currentTitleIndex'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='currentVideoSubTitleDelay'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='currentVideoSubTitleIndex'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='currentVideoTrackIndex'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='drawable'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='equalizerEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='equalizerProfiles'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='extraShortJumpBackward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='extraShortJumpForward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='fastForward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='fastForwardAtRate:'>
+<arg declared_type='float' index='0' name='rate' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='fps'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='framesPerSecond'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='frequencyOfBandAtIndex:'>
+<arg declared_type='unsigned int' index='0' name='index' type='I'/>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='gamma'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='gotoNextFrame'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='hasVideoOut'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='hue'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='initWithOptions:'>
+<arg declared_type='NSArray*' index='0' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithVideoLayer:'>
+<arg declared_type='VLCVideoLayer*' index='0' name='aVideoLayer' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithVideoView:'>
+<arg declared_type='VLCVideoView*' index='0' name='aVideoView' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isPlaying'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isSeekable'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='jumpBackward:'>
+<arg declared_type='NSInteger' index='0' name='interval' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='jumpForward:'>
+<arg declared_type='NSInteger' index='0' name='interval' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='libraryInstance'>
+<retval declared_type='VLCLibrary*' type='@'/>
+</method>
+<method selector='longJumpBackward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='longJumpForward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='media'>
+<retval declared_type='VLCMedia*' type='@'/>
+</method>
+<method selector='mediumJumpBackward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediumJumpForward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='nextChapter'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='numberOfBands'>
+<retval declared_type='unsigned int' type='I'/>
+</method>
+<method selector='openVideoSubTitlesFromFile:'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='pause'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='play'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='position'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='preAmplification'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='previousChapter'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='rate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='remainingTime'>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method selector='resetEqualizerFromProfile:'>
+<arg declared_type='unsigned int' index='0' name='profile' type='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='rewind'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='rewindAtRate:'>
+<arg declared_type='float' index='0' name='rate' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='saturation'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='saveVideoSnapshotAt:withWidth:andHeight:'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='width' type='I' type64='Q'/>
+<arg declared_type='NSUInteger' index='2' name='height' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='scaleFactor'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setAdjustFilterEnabled:'>
+<arg declared_type='BOOL' index='0' name='adjustFilterEnabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAmplification:forBand:'>
+<arg declared_type='CGFloat' index='0' name='amplification' type='f' type64='d'/>
+<arg declared_type='unsigned int' index='1' name='index' type='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAudioChannel:'>
+<arg declared_type='NSInteger' index='0' name='value' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBrightness:'>
+<arg declared_type='float' index='0' name='brightness' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setContrast:'>
+<arg declared_type='float' index='0' name='contrast' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentAudioPlaybackDelay:'>
+<arg declared_type='NSInteger' index='0' name='currentAudioPlaybackDelay' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentAudioTrackIndex:'>
+<arg declared_type='NSUInteger' index='0' name='currentAudioTrackIndex' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentChapterIndex:'>
+<arg declared_type='NSUInteger' index='0' name='currentChapterIndex' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentTitleIndex:'>
+<arg declared_type='NSUInteger' index='0' name='currentTitleIndex' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentVideoSubTitleDelay:'>
+<arg declared_type='NSInteger' index='0' name='currentVideoSubTitleDelay' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentVideoSubTitleIndex:'>
+<arg declared_type='NSUInteger' index='0' name='currentVideoSubTitleIndex' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentVideoTrackIndex:'>
+<arg declared_type='NSUInteger' index='0' name='currentVideoTrackIndex' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDeinterlaceFilter:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDrawable:'>
+<arg declared_type='id' index='0' name='drawable' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEqualizerEnabled:'>
+<arg declared_type='BOOL' index='0' name='equalizerEnabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGamma:'>
+<arg declared_type='float' index='0' name='gamma' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHue:'>
+<arg declared_type='NSInteger' index='0' name='hue' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPosition:'>
+<arg declared_type='float' index='0' name='newPosition' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPreAmplification:'>
+<arg declared_type='CGFloat' index='0' name='preAmplification' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRate:'>
+<arg declared_type='float' index='0' name='rate' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSaturation:'>
+<arg declared_type='float' index='0' name='saturation' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setScaleFactor:'>
+<arg declared_type='float' index='0' name='scaleFactor' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTime:'>
+<arg declared_type='VLCTime*' index='0' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVideoAspectRatio:'>
+<arg declared_type='char*' index='0' name='value' type='*'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVideoCropGeometry:'>
+<arg declared_type='char*' index='0' name='value' type='*'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVideoLayer:'>
+<arg declared_type='VLCVideoLayer*' index='0' name='aVideoLayer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVideoView:'>
+<arg declared_type='VLCVideoView*' index='0' name='aVideoView' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shortJumpBackward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shortJumpForward'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='state'>
+<retval declared_type='VLCMediaPlayerState' type='i' type64='q'/>
+</method>
+<method selector='stop'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='time'>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method selector='titles'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='videoAspectRatio'>
+<retval declared_type='char*' type='*'/>
+</method>
+<method selector='videoCropGeometry'>
+<retval declared_type='char*' type='*'/>
+</method>
+<method selector='videoSize'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+<method selector='videoSubTitles'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='videoSubTitlesIndexes'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='videoSubTitlesNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='videoTrackIndexes'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='videoTrackNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='videoTracks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='willPlay'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='VLCMediaThumbnailer'>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='fetchThumbnail'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='libVLCinstance'>
+<retval declared_type='void*' type='^v'/>
+</method>
+<method selector='media'>
+<retval declared_type='VLCMedia*' type='@'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLibVLCinstance:'>
+<arg declared_type='void*' index='0' name='libVLCinstance' type='^v'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSnapshotPosition:'>
+<arg declared_type='float' index='0' name='snapshotPosition' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnail:'>
+<arg declared_type='CGImageRef' index='0' name='thumbnail' type='^{CGImage=}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailHeight:'>
+<arg declared_type='CGFloat' index='0' name='thumbnailHeight' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailWidth:'>
+<arg declared_type='CGFloat' index='0' name='thumbnailWidth' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='snapshotPosition'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='thumbnail'>
+<retval declared_type='CGImageRef' type='^{CGImage=}'/>
+</method>
+<method selector='thumbnailHeight'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='thumbnailWidth'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method class_method='true' selector='thumbnailerWithMedia:andDelegate:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<arg declared_type='id' index='1' name='delegate' type='@'/>
+<retval declared_type='VLCMediaThumbnailer*' type='@'/>
+</method>
+<method class_method='true' selector='thumbnailerWithMedia:delegate:andVLCLibrary:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<arg declared_type='id' index='1' name='delegate' type='@'/>
+<arg declared_type='VLCLibrary*' index='2' name='library' type='@'/>
+<retval declared_type='VLCMediaThumbnailer*' type='@'/>
+</method>
+</class>
+<class name='VLCStreamOutput'>
+<method selector='initWithOptionDictionary:'>
+<arg declared_type='NSDictionary*' index='0' name='dictionary' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='ipodStreamOutputWithFilePath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='mpeg2StreamOutputWithFilePath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='mpeg4StreamOutputWithFilePath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='rtpBroadcastStreamOutput'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='rtpBroadcastStreamOutputWithSAPAnnounce:'>
+<arg declared_type='NSString*' index='0' name='announceName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='streamOutputWithFilePath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='streamOutputWithOptionDictionary:'>
+<arg declared_type='NSDictionary*' index='0' name='dictionary' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='VLCStreamSession'>
+<method selector='isComplete'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='media'>
+<retval declared_type='VLCMedia*' type='@'/>
+</method>
+<method selector='setMedia:'>
+<arg declared_type='VLCMedia*' index='0' name='media' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStreamOutput:'>
+<arg declared_type='VLCStreamOutput*' index='0' name='streamOutput' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startStreaming'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopStreaming'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='streamOutput'>
+<retval declared_type='VLCStreamOutput*' type='@'/>
+</method>
+<method class_method='true' selector='streamSession'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='VLCTime'>
+<method selector='compare:'>
+<arg declared_type='VLCTime*' index='0' name='aTime' type='@'/>
+<retval declared_type='NSComparisonResult' type='i' type64='q'/>
+</method>
+<method selector='initWithInt:'>
+<arg declared_type='int' index='0' name='aInt' type='i'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithNumber:'>
+<arg declared_type='NSNumber*' index='0' name='aNumber' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='intValue'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='minuteStringValue'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='nullTime'>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method selector='numberValue'>
+<retval declared_type='NSNumber*' type='@'/>
+</method>
+<method selector='stringValue'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='timeWithInt:'>
+<arg declared_type='NSInteger' index='0' name='aInt' type='i' type64='q'/>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method class_method='true' selector='timeWithNumber:'>
+<arg declared_type='NSNumber*' index='0' name='aNumber' type='@'/>
+<retval declared_type='VLCTime*' type='@'/>
+</method>
+<method selector='verboseStringValue'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='VLCVideoLayer'>
+<method selector='fillScreen'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='hasVideo'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setFillScreen:'>
+<arg declared_type='BOOL' index='0' name='fillScreen' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='VLCVideoView'>
+<method selector='backColor'>
+<retval declared_type='NSColor*' type='@'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='fillScreen'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='hasVideo'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setBackColor:'>
+<arg declared_type='NSColor*' index='0' name='backColor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFillScreen:'>
+<arg declared_type='BOOL' index='0' name='fillScreen' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='VLCMediaDelegate'>
+<method selector='media:metaValueChangedFrom:forKey:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='VLCMedia*' index='0' name='aMedia' type='@'/>
+<arg declared_type='id' index='1' name='oldValue' type='@'/>
+<arg declared_type='NSString*' index='2' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaDidFinishParsing:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='VLCMedia*' index='0' name='aMedia' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaMetaDataDidChange:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='VLCMedia*' index='0' name='aMedia' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='VLCMediaListDelegate'>
+<method selector='mediaList:mediaAdded:atIndex:' type='v20@0:4@8@12i16' type64='v40@0:8@16@24q32'>
+<arg declared_type='VLCMediaList*' index='0' name='aMediaList' type='@'/>
+<arg declared_type='VLCMedia*' index='1' name='media' type='@'/>
+<arg declared_type='NSInteger' index='2' name='index' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaList:mediaRemovedAtIndex:' type='v16@0:4@8i12' type64='v32@0:8@16q24'>
+<arg declared_type='VLCMediaList*' index='0' name='aMediaList' type='@'/>
+<arg declared_type='NSInteger' index='1' name='index' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='VLCMediaPlayerDelegate'>
+<method selector='mediaPlayerStateChanged:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSNotification*' index='0' name='aNotification' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaPlayerTimeChanged:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSNotification*' index='0' name='aNotification' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='VLCMediaThumbnailerDelegate'>
+<method selector='mediaThumbnailer:didFinishThumbnail:' type='v16@0:4@8^{CGImage=}12' type64='v32@0:8@16^{CGImage=}24'>
+<arg declared_type='VLCMediaThumbnailer*' index='0' name='mediaThumbnailer' type='@'/>
+<arg declared_type='CGImageRef' index='1' name='thumbnail' type='^{CGImage=}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaThumbnailerDidTimeOut:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='VLCMediaThumbnailer*' index='0' name='mediaThumbnailer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+</signatures>
